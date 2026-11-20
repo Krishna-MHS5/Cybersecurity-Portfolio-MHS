@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Cybersecurity and cloud security portfolio showcasing practical projects, AWS cloud implementation and security learning.">
+
+  <title>Cybersecurity &amp; Cloud Security Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-brand">
+        <img
+            src="images/k-shield-logo.png"
+            alt="K-Shield cybersecurity logo"
+            class="site-logo"
+        >
+        <div class="header-text">
+            <h1>Cybersecurity Portfolio</h1>
+            <p>Cybersecurity | Cloud Security | Digital Protection</p>
+        </div>
+    </div>
+</header>
+<nav aria-label="Main navigation">
+    <a href="#Home">Home</a>
+    <a href="about.html">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#security">Security</a>
+</nav>
+<main>
+<!-- HERO SECTION -->
+<section class="hero-section" aria-labelledby="hero-title">
+
+    <div class="hero-content">
+        <p class="hero-label"></p>
+
+        <h1 id="hero-title">
+            Building a More Secure
+            <span>Digital World.</span>
+        </h1>
+
+        <p class="hero-description">
+            An aspiring cybersecurity professional focused on
+            security operation, cloud security and infrastructure
+            protection. Building practical knowledge through hands-on
+            cloud projects and continuous technical development, with
+            an interest in security monitoring, threat detection and
+            identifying potential security risks.
+        </p>
+
+        <a href="#projects" class="hero-button">
+            Explore My Projects <span aria-hidden="true">→</span>
+        </a>
+
+        <div class="hero-topics">
+            <span>Cloud Security</span>
+            <span>Web Security</span>
+            <span>Continuous Learning</span>
+        </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+        <div class="shield-circle circle-one"></div>
+        <div class="shield-circle circle-two"></div>
+
+        <img
+            src="images/cybersecurity-illustration.png"
+            alt="Cloud cybersecurity and digital protection illustration"
+            class="hero-image"
+        >
+    </div>
+
+</section>
+
+<!-- AWS PROJECT SECTION -->
+<section id="projects" class="aws-project-section">
+
+    <div class="aws-project-heading">
+        <span class="aws-project-label">PROJECT 01</span>
+
+        <h2>AWS Cloud Hosting &amp; Security Implementation</h2>
+
+        <p>
+            Cloud infrastructure deployment, access management
+            and secure content delivery.
+        </p>
+    </div>
+
+    <div class="aws-project-card">
+
+        <!-- PROJECT OVERVIEW -->
+        <div class="aws-overview">
+            <h3>Project Overview</h3>
+
+            <p>
+                Designed, deployed and tested a static portfolio
+                using AWS cloud infrastructure. The project involved
+                configuring Amazon S3 for static hosting, managing
+                access permissions, setting up Amazon CloudFront
+                and testing HTTPS access.
+            </p>
+        </div>
+
+        <!-- ARCHITECTURE DIAGRAM -->
+        <div class="aws-architecture">
+            <h3>AWS Architecture &amp; Workflow</h3>
+
+            <p class="aws-section-description">
+                Overview of the services used to host and deliver
+                the portfolio.
+            </p>
+
+            <div class="aws-flow">
+
+                <div class="aws-flow-item">
+                    <div class="aws-icon">01</div>
+                    <h4>Amazon S3</h4>
+                    <p>Stores the portfolio files and hosts the static content.</p>
+                </div>
+
+                <div class="aws-flow-arrow">↓</div>
+
+                <div class="aws-flow-item">
+                    <div class="aws-icon">02</div>
+                    <h4>Amazon CloudFront</h4>
+                    <p>Distributes the hosted content to visitors.</p>
+                </div>
+
+                <div class="aws-flow-arrow">↓</div>
+
+                <div class="aws-flow-item">
+                    <div class="aws-icon">03</div>
+                    <h4>HTTPS Access</h4>
+                    <p>Provides encrypted communication when accessing the portfolio.</p>
+                </div>
+
+            </div>
+
+            <div class="aws-access-note">
+                <strong>Access Management</strong>
+                <p>
+                    AWS IAM permissions and S3 bucket policies
+                    were configured as part of the implementation.
+                </p>
+            </div>
+        </div>
+
+        <!-- PRACTICAL IMPLEMENTATION -->
+        <section
+            id="practical-implementation"
+            class="implementation-section"
+        >
+            <h3>Practical Implementation</h3>
+
+            <div class="implementation-diagram">
+                <img
+                    src="images/aws-practical-implementation.png"
+                    alt="AWS workflow showing S3 storage, access management, CloudFront and HTTPS"
+                >
+            </div>
+        </section>
+
+        <!-- SECURITY OBJECTIVES -->
+        <h3>Security Objectives</h3>
+
+        <section class="security-objectives">
+
+            <div class="security-text">
+                Applied key security
+                principles to build a safer website.
+
+                <ul>
+                    <li>Implemented HTTPS encryption to secure website communication</li>
+                    <li>Configured private cloud storage and access controls</li>
+                    <li>Applied least-privilege access principles to manage resource permissions</li>
+                    <li>Implemented website security headers to strengthen browser-side security.</li>
+                </ul>
+            </div>
+
+            <div class="security-image">
+                <img
+                    src="images/aws-security-architecture.png"
+                    alt="AWS Security Architecture showing HTTPS, private storage, access control and website security"
+                >
+            </div>
+
+        </section>
+
+        <!-- PROJECT OUTCOME -->
+        <div class="aws-outcome">
+            <h3>Project Outcomes &amp; Learning</h3>
+
+            <p>
+                Successfully deployed and tested a static portfolio
+                using AWS infrastructure. Developed practical
+                understanding of cloud hosting, access permissions,
+                content delivery and HTTPS configuration.
+            </p>
+
+            <p>
+                AWS resources were decommissioned after testing
+                to avoid unnecessary ongoing costs.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- TESTING AND VALIDATION -->
+    <section class="testing-section">
+        <h4>Testing And Validation</h4>
+
+        <p>
+            Conducted testing to validate website navigation,
+            interactive functionality, responsive behaviour and
+            browser console performance. Reviewed AWS security
+            configurations and access controls to assess
+            deployment security.
+        </p>
+    </section>
+
+    <p class="project-Outcome">
+        <strong>PROJECT OUTCOME:</strong> In progress
+    </p>
+
+</section>
+
+<!-- SECURITY SECTION -->
+<section id="security">
+
+    <h2>Security Practices</h2>
+
+    <ul>
+        <li>HTTPS encryption</li>
+        <li>Private storage origin</li>
+        <li>Least-privilege access</li>
+        <li>Security headers</li>
+    </ul>
+
+    <button id="securityButton" type="button">
+        Check my security checklist
+    </button>
+
+    <p id="securityMessage" role="status"></p>
+
+</section>
+
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>

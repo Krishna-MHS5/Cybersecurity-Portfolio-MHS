@@ -1,0 +1,1495 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: black;
+  line-height: 1.6;
+}
+
+header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 48px 20px;
+  text-transform: uppercase;
+}
+
+nav {
+  background: rgb(255, 136, 0);
+  padding: 14px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  width: 100%;
+  max-width: none;
+  margin: 30px 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+section {
+  background: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#projects article {
+  background: #ffffff;
+  border-left: 5px solid #f97316;
+  padding: 24px;
+  margin: 24px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#projects article h3 {
+  color: #f97316;
+  font-size: 24px;
+}
+
+#projects article h4 {
+  color: #102a43;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+#projects article p,
+#projects article li {
+  line-height: 1.8;
+}
+
+#projects article li {
+  margin-bottom: 6px;
+}
+
+
+button {
+  background: red;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #102a43;
+  color: white;
+}
+
+/* COMPACT TECHNOLOGIES SECTION */
+#technologies {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+#technologies .tech-heading {
+  margin-bottom: 20px;
+}
+
+#technologies .tech-heading h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+#technologies .tech-heading p {
+  font-size: 14px;
+}
+
+/* Smaller three cards */
+#technologies .tech-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+#technologies .tech-card {
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+#technologies .tech-visual {
+  min-height: 110px;
+  gap: 12px;
+}
+
+#technologies .tech-icon {
+  font-size: 45px;
+}
+
+#technologies .visual-shield,
+#technologies .cloud-icon,
+#technologies .visual-lock {
+  font-size: 25px;
+}
+
+#technologies .tech-content {
+  padding: 15px;
+}
+
+#technologies .tech-number {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#technologies .tech-content h3 {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+#technologies .tech-content p,
+#technologies .tech-content li {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+#technologies .tech-content ul {
+  padding-left: 17px;
+}
+
+#technologies .tech-content li {
+  margin-bottom: 5px;
+}
+
+#technologies .tech-note {
+  padding: 9px;
+  font-size: 12px !important;
+}
+
+/* Compact AWS connection */
+#technologies .aws-connector {
+  padding: 5px;
+  font-size: 13px;
+}
+
+#technologies .aws-connector span {
+  font-size: 30px;
+}
+
+#technologies .aws-panel {
+  grid-template-columns: 1.4fr repeat(4, 1fr);
+  gap: 10px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+#technologies .aws-symbol {
+  font-size: 32px;
+}
+
+#technologies .aws-title h3 {
+  font-size: 16px;
+}
+
+#technologies .aws-title p,
+#technologies .aws-service p {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+#technologies .aws-service > span {
+  font-size: 27px;
+}
+
+#technologies .aws-service h4 {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+#technologies .architecture-caption {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  #technologies .tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #technologies .aws-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #technologies .aws-title {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  #technologies .tech-grid,
+  #technologies .aws-panel {
+    grid-template-columns: 1fr;
+  }
+
+  #technologies .aws-title {
+    grid-column: auto;
+  }
+}
+
+/* Connected diagram lines */
+#technologies .aws-connector {
+  padding: 12px 0 0;
+  text-align: center;
+  color: #f97316;
+  font-weight: bold;
+}
+
+#technologies .connection-diagram {
+  display: block;
+  width: 100%;
+  height: 55px;
+  overflow: visible;
+}
+
+#technologies .connection-diagram path {
+  fill: none;
+  stroke: #f97316;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ===== TECHNOLOGY ARCHITECTURE DIAGRAM ===== */
+
+#technologies.architecture {
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 28px 20px;
+  background: #071b33;
+  color: #eaf4ff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.architecture,
+.architecture * {
+  box-sizing: border-box;
+}
+
+.architecture-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.architecture-heading h2 {
+  color: #ffffff;
+  font-size: clamp(22px, 3vw, 30px);
+  margin: 0 0 8px;
+}
+
+.architecture-heading p {
+  color: #b8d7f5;
+  font-size: 14px;
+  margin: 0;
+}
+
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.architecture-card {
+  min-width: 0;
+  background: #0b2544;
+  border: 2px solid #ff7900;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.architecture-image {
+  position: relative;
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: linear-gradient(135deg, #123b60, #06162b);
+  border-bottom: 2px solid #ff7900;
+}
+
+.architecture-image .number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ff7900;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.architecture-image .illustration {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.architecture-content {
+  padding: 17px;
+}
+
+.architecture-content h3 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+
+.architecture-content p,
+.architecture-content li {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #d5e6f7;
+}
+
+.architecture-content ul {
+  padding-left: 18px;
+  margin: 12px 0;
+}
+
+.architecture-content li {
+  margin-bottom: 5px;
+}
+
+.architecture-content li::marker {
+  color: #ff7900;
+}
+
+.architecture-note {
+  background: #123456;
+  border-radius: 7px;
+  padding: 11px;
+  color: #cfe5fa;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* Orange lines linking all three blocks */
+.architecture-connector {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.architecture-connector p {
+  color: #ff9a3d;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.architecture-connector svg {
+  display: block;
+  width: 100%;
+  height: 52px;
+  overflow: visible;
+}
+
+.architecture-connector path {
+  fill: none;
+  stroke: #ff7900;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* AWS panel */
+.architecture-aws {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  align-items: center;
+  background: #0b2544;
+  border: 2px solid #ff7900;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.aws-intro {
+  min-width: 0;
+  padding-right: 12px;
+  border-right: 1px solid #315575;
+}
+
+.aws-wordmark {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.aws-wordmark span {
+  color: #ff9900;
+}
+
+.aws-intro h3 {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.aws-intro p,
+.aws-service p {
+  color: #c9def2;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.aws-service {
+  min-width: 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.aws-service > span {
+  font-size: 28px;
+}
+
+.aws-service h4 {
+  color: #ffb366;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.architecture-footer {
+  text-align: center;
+  color: #9fbedc;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 17px 0 0;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .architecture-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .architecture-aws {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .aws-intro {
+    grid-column: 1 / -1;
+    border-right: none;
+    border-bottom: 1px solid #315575;
+    padding: 0 0 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  #technologies.architecture {
+    padding: 20px 12px;
+  }
+
+  .architecture-grid,
+  .architecture-aws {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-image {
+    min-height: 100px;
+  }
+
+  .architecture-connector svg {
+    height: 30px;
+  }
+
+  .aws-intro {
+    grid-column: auto;
+  }
+}
+
+/* Make the technology diagram look like a compact infographic */
+
+#technologies.architecture {
+  width: min(100%, 1050px);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Keep the three blocks side by side */
+#technologies .architecture-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* Make each block shorter */
+#technologies .architecture-image {
+  min-height: 75px;
+}
+
+#technologies .architecture-image .illustration {
+  font-size: 30px;
+}
+
+#technologies .architecture-content {
+  padding: 12px;
+}
+
+#technologies .architecture-content h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+#technologies .architecture-content > p,
+#technologies .architecture-content ul,
+#technologies .architecture-note {
+  display: none;
+}
+
+/* Shorten the connecting lines */
+#technologies .architecture-connector {
+  padding-top: 8px;
+}
+
+#technologies .architecture-connector svg {
+  height: 35px;
+}
+
+/* Make AWS section compact */
+#technologies .architecture-aws {
+  grid-template-columns: 1.3fr repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  padding: 14px;
+}
+
+#technologies .aws-wordmark {
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+
+#technologies .aws-intro h3 {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+#technologies .aws-intro p,
+#technologies .aws-service p {
+  font-size: 10px;
+}
+
+#technologies .aws-service > span {
+  font-size: 22px;
+}
+
+#technologies .aws-service h4 {
+  font-size: 11px;
+  margin: 5px 0;
+}
+
+#technologies .architecture-footer {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/* Keep it readable on smaller screens */
+@media (max-width: 600px) {
+  #technologies .architecture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #technologies .architecture-aws {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #technologies .aws-intro {
+    grid-column: 1 / -1;
+  }
+}
+
+/* White background and readable black text */
+
+#technologies.architecture {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+/* Three technology cards */
+#technologies .architecture-card {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ff7900;
+}
+
+#technologies .architecture-card h3 {
+  color: #000000;
+}
+
+#technologies .architecture-card p {
+  color: #222222;
+}
+
+#technologies .architecture-icon {
+  background: #f1f5f9;
+  color: #000000;
+}
+
+/* AWS panel */
+#technologies .architecture-aws {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ff7900;
+}
+
+#technologies .aws-wordmark {
+  color: #000000;
+}
+
+#technologies .aws-wordmark span {
+  color: #ff7900;
+}
+
+#technologies .aws-intro h3 {
+  color: #000000;
+}
+
+#technologies .aws-intro p,
+#technologies .aws-service p {
+  color: #222222;
+}
+
+#technologies .aws-service h4 {
+  color: #000000;
+}
+
+#technologies .aws-intro {
+  border-color: #dddddd;
+}
+
+/* Keep the connecting lines orange */
+#technologies .architecture-connector path {
+  stroke: #ff7900;
+}
+
+/* What I Learned Diagram */
+.learning-section {
+  background: #ffffff;
+  color: #111827;
+  padding: 35px 25px;
+  max-width: 1000px;
+  margin: 30px auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.learning-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.learning-main-icon {
+  background: #fff0df;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 26px;
+}
+
+.learning-heading h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.learning-heading p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.learning-card {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.learning-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.learning-icon span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e87500;
+}
+
+.learning-card h3 {
+  color: #111827;
+  font-size: 17px;
+  margin: 0 0 8px;
+}
+
+.learning-card p {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+
+.learning-line {
+  height: 4px;
+  background: #ff7900;
+  border-radius: 5px;
+}
+
+.line-1 { width: 45%; }
+.line-2 { width: 60%; }
+.line-3 { width: 55%; }
+.line-4 { width: 70%; }
+
+.learning-takeaway {
+  background: #fff7ed;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 20px;
+}
+
+.learning-takeaway h4 {
+  color: #9a4b00;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 0 0 8px;
+}
+
+.learning-takeaway p {
+  color: #292524;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+  .learning-section {
+    padding: 22px 16px;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-heading h2 {
+    font-size: 19px;
+  }
+}
+
+.security-objectives {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  color: #142d4e;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.security-text h2 {
+  color: #142d4e;
+  font-size: 28px;
+  margin-top: 0;
+  border-left: 5px solid #e87500;
+  padding-left: 12px;
+}
+
+.security-text p,
+.security-text li {
+  color: #374151;
+  line-height: 1.7;
+}
+
+.security-text ul {
+  padding-left: 22px;
+}
+
+.security-text li {
+  margin-bottom: 10px;
+}
+
+.security-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Stack the content on smaller screens */
+@media (max-width: 768px) {
+  .security-objectives {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+/* HOMEPAGE INTRODUCTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 35px auto;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-label {
+  color: #ff6b00;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.hero-content h2 {
+  color: #333333;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.hero-description {
+  color: #555555;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 570px;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 22px;
+  background: #ff6b00;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: background 0.2s ease;
+}
+
+.hero-button:hover {
+  background: #e65c00;
+}
+
+.hero-topics {
+  margin-top: 28px;
+  color: #808000;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.hero-topics span {
+  color: #ff6b00;
+  margin: 0 5px;
+}
+
+.hero-visual {
+  flex: 0 1 300px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 0;
+}
+
+.hero-shield {
+  width: 150px;
+  height: 165px;
+  background: #808000;
+  clip-path: polygon(50% 0, 95% 18%, 88% 65%,
+                     50% 100%, 12% 65%, 5% 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-shield span {
+  font-size: 58px;
+}
+
+.hero-shield strong {
+  position: absolute;
+  right: 12px;
+  bottom: 22px;
+  background: #ff6b00;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  font-size: 18px;
+}
+
+.hero-visual > p {
+  color: #666600;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* MOBILE-FRIENDLY LAYOUT */
+@media (max-width: 700px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 20px 12px;
+    padding: 28px 22px;
+    gap: 28px;
+  }
+
+  .hero-visual {
+    flex-basis: auto;
+    min-height: 230px;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+  }
+
+  .hero-topics {
+    line-height: 2;
+  }
+}
+
+/* Keep the original website colours */
+body {
+  background: #f0f5fa;
+  color: #000000;
+}
+
+.site-header {
+  background: black;
+}
+
+.main-nav {
+  background: black;
+}
+
+.main-nav a {
+  color: #ffffff;
+}
+
+.site-logo {
+  color: #000000;
+}
+
+.hero-section,
+main > section:not(.hero-section) {
+  background: #ffffff;
+}
+
+.hero-content h1,
+main section h2,
+main section h3 {
+  color: #000000;
+}
+
+.hero-content h1 span,
+.hero-label,
+main section h4 {
+  color: #ff6600;
+}
+
+.hero-button,
+#securityButton,
+.logo-mark {
+  background: #ff6600;
+  color: #ffffff;
+}
+
+.hero-button:hover,
+#securityButton:hover {
+  background: #e65c00;
+}
+
+footer {
+  background: black;
+  color: #ffffff;
+}
+.hero-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* AWS PROJECT SECTION */
+
+.aws-project-section {
+  padding: 55px 25px;
+  background: #f4f4f4;
+  color: #171717;
+}
+
+.aws-project-heading {
+  max-width: 1050px;
+  margin: 0 auto 30px;
+}
+
+.aws-project-card {
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+  padding: 35px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 5px solid #f47721;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.07);
+}
+
+/* ARCHITECTURE WORKFLOW */
+
+.aws-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.aws-flow-item {
+  background: #171717;
+  color: white;
+  padding: 22px 15px;
+  text-align: center;
+  border-radius: 9px;
+  border-bottom: 4px solid #f47721;
+  height: 100%;
+}
+
+.aws-flow-item h4 {
+  color: white;
+  margin: 12px 0 8px;
+}
+
+.aws-flow-item p {
+  color: #dddddd;
+  font-size: 13px;
+}
+
+.aws-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  border-radius: 50%;
+  background: #f47721;
+  color: #171717;
+  font-weight: bold;
+}
+
+.aws-flow-arrow {
+  color: #f47721;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.aws-access-note {
+  margin-top: 20px;
+  padding: 18px;
+  background: #fff4e9;
+  border-left: 4px solid #f47721;
+  border-radius: 6px;
+}
+
+/* IMPLEMENTATION STEPS */
+
+.aws-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.aws-step {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.aws-step > span {
+  color: #f47721;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.aws-step h4 {
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.aws-step p {
+  font-size: 14px;
+}
+
+/* SECURITY CONSIDERATIONS */
+
+.aws-security-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.aws-security-grid > div {
+  padding: 20px;
+  background: #171717;
+  border-radius: 8px;
+  border-top: 3px solid #f47721;
+}
+
+.aws-security-grid h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.aws-security-grid p {
+  color: #dddddd;
+  font-size: 14px;
+}
+
+/* OUTCOME */
+
+.aws-outcome {
+  padding: 22px;
+  background: #fff4e9;
+  border-radius: 8px;
+  border-left: 4px solid #f47721;
+}
+
+/* TECHNOLOGY TAGS */
+
+.aws-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.aws-tags span {
+  padding: 9px 14px;
+  background: #171717;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 13px;
+  border-bottom: 2px solid #f47721;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 700px) {
+
+  .aws-project-section {
+    padding: 35px 14px;
+  }
+
+  .aws-project-card {
+    padding: 22px;
+  }
+
+  .aws-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .aws-flow-arrow {
+    transform: rotate(90deg);
+    text-align: center;
+  }
+
+  .aws-steps,
+  .aws-security-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== K-SHIELD HEADER LOGO ===== */
+
+.site-header {
+    background-color: black;
+    padding: 20px 30px;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.site-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    background: black;
+    border-radius: 10px;
+    padding: 4px;
+    flex-shrink: 0;
+}
+
+.header-text {
+    text-align: left;
+}
+
+.header-text h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    color: white;
+}
+
+.header-text p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .site-header {
+        padding: 18px 12px;
+    }
+
+    .header-brand {
+        gap: 12px;
+    }
+
+    .site-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .header-text h1 {
+        font-size: 19px;
+    }
+
+    .header-text p {
+        font-size: 12px;
+    }
+}
+
+/* ===== PRACTICAL IMPLEMENTATION DIAGRAM ===== */
+
+.implementation-section {
+    background: #ffffff;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+.implementation-section h2 {
+    color: #17202a;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 0;
+    text-align: left;
+    padding-left: 6px;
+}
+
+.implementation-diagram {
+    width: 100%;
+    text-align: center;
+}
+
+.implementation-diagram img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    .implementation-section {
+        padding: 18px;
+    }
+
+    .implementation-section h2 {
+        font-size: 23px;
+    }
+}
+
+/* ===== CLEAN SECURITY OBJECTIVES SECTION ===== */
+
+.security-objectives {
+    background: #ffffff;
+    border: none;
+    box-shadow: none;
+    padding: 30px 35px;
+    margin: 25px 0 40px;
+    border-radius: 0;
+}
+
+/* Security Objectives heading */
+
+.security-objectives h2 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    border-left: 6px solid #000000;
+    padding-left: 18px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Text and image layout */
+.security-objectives-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.security-objectives-content p,
+.security-objectives-content li {
+    color: #374151;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Remove unnecessary image border */
+.security-objectives-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 750px) {
+    .security-objectives-content {
+        grid-template-columns: 1fr;
+    }
+
+    .security-objectives {
+        padding: 20px 10px;
+    }
+}
+
+/* Testing and Validation section */
+
+.testing-section {
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin: 0;
+    color: #111111;
+}
+
+.testing-section h4 {
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+.testing-section p {
+    color: #111111;
+    line-height: 1.8;
+    font-size: 17px;
+    margin: 0;
+}
+/* Continuous white project background */
+
+.project-details {
+    background: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 35px;
+    margin: 0;
+}
+
+/* Testing section */
+.testing-section {
+    background: transparent;
+    padding: 15px 0;
+    margin: 0;
+}
+
+/* Project status */
+.project-status {
+    background: transparent;
+    margin: 20px 0;
+    padding: 10px 0;
+    color: #111111;
+}
+
+/* Avoid gaps from section margins */
+.project-details > * {
+    margin-top: 0;
+}
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
